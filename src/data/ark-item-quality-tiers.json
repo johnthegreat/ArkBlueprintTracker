@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Primitive",
+        "QualityTier": 0
+    },
+    {
+        "Name": "Ramshackle",
+        "QualityTier": 1
+    },
+    {
+        "Name": "Apprentice",
+        "QualityTier": 2
+    },
+    {
+        "Name": "Journeyman",
+        "QualityTier": 3
+    },
+    {
+        "Name": "Mastercraft",
+        "QualityTier": 4
+    },
+    {
+        "Name": "Ascendant",
+        "QualityTier": 5
+    }
+]

@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Ark Blueprint Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is to help you keep track of all your tribe's [blueprints with quality](https://ark.wiki.gg/wiki/Blueprints) in the video game ARK: Survival Evolved.
 
-## Available Scripts
+Track blueprint armor, durability, and damage statistics, as is relevant.
 
-In the project directory, you can run:
+See below for screenshots.
 
-### `npm start`
+Features:
+- An always-visible summary of the count of each item quality blueprints you have (e.g. Ascendant, Mastercraft, etc.)
+- Blueprints grouped by item
+- See how many blueprints of each type your tribe has
+- Many possible blueprints with quality pre-populated in a user-friendly searchable list.
+- Which materials required to craft an item pre-populated, simply enter the required number of materials.
+- Show how many stacks of each material you will need to create the blueprint. To know at-a-glance if you can craft in Smithy / Fabricator / etc.
+- Built-in calculator if you need to craft multiples of a blueprint to tell you exactly how many materials you will need.
+- Leave a comment on each blueprint; who has it, which server it's on, which base it's at, etc.
+- Blueprints search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technology Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project utilizes the Create React App project, uses React and Bootstrap 5.
 
-### `npm test`
+## Running
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is a frontend only, and I am currently using [json-server](https://www.npmjs.com/package/json-server) as the backend.
 
-### `npm run build`
+```json-server data.json --host 0.0.0.0 --p 3001 --id uuid```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![A screenshot of the Dashboard](Screenshot-Dashboard.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![A screenshot of the Add Blueprint screen](Screenshot-Add-Blueprint.png)
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Copyright &copy; 2022 John Nahlen.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`MIT`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+See `LICENSE.txt`.

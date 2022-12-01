@@ -1,0 +1,158 @@
+[
+    {
+        "Item": "Absorbent Substrate",
+        "StackSize": 100
+    },
+    {
+        "Item": "Amargasaurus Spike",
+        "StackSize": 1
+    },
+    {
+        "Item": "AnglerGel",
+        "StackSize": 100
+    },
+    {
+        "Item": "Black Pearl",
+        "StackSize": 200
+    },
+    {
+        "Item": "Cementing Paste",
+        "StackSize": 100
+    },
+    {
+        "Item": "Chitin",
+        "StackSize": 100
+    },
+    {
+        "Item": "Congealed Gas Ball",
+        "StackSize": 100
+    },
+    {
+        "Item": "Crystal",
+        "StackSize": 100
+    },
+    {
+        "Item": "Electronics",
+        "StackSize": 100
+    },
+    {
+        "Item": "Element",
+        "StackSize": 100
+    },
+    {
+        "Item": "Element Dust",
+        "StackSize": 1000
+    },
+    {
+        "Item": "Element Shard",
+        "StackSize": 1000
+    },
+    {
+        "Item": "Fiber",
+        "StackSize": 300
+    },
+    {
+        "Item": "Flint",
+        "StackSize": 100
+    },
+    {
+        "Item": "Gasoline",
+        "StackSize": 100
+    },
+    {
+        "Item": "Green Gem",
+        "StackSize": 100
+    },
+    {
+        "Item": "Gunpowder",
+        "StackSize": 100
+    },
+    {
+        "Item": "Hide",
+        "StackSize": 200
+    },
+    {
+        "Item": "Human Hair",
+        "StackSize": 200
+    },
+    {
+        "Item": "Keratin",
+        "StackSize": 100
+    },
+    {
+        "Item": "Metal",
+        "StackSize": 300
+    },
+    {
+        "Item": "Metal Ingot",
+        "StackSize": 300
+    },
+    {
+        "Item": "Narcotic",
+        "StackSize": 100
+    },
+    {
+        "Item": "Obsidian",
+        "StackSize": 100
+    },
+    {
+        "Item": "Oil",
+        "StackSize": 100
+    },
+    {
+        "Item": "Organic Polymer",
+        "StackSize": 20
+    },
+    {
+        "Item": "Pelt",
+        "StackSize": 200
+    },
+    {
+        "Item": "Polymer",
+        "StackSize": 100
+    },
+    {
+        "Item": "Sand",
+        "StackSize": 100
+    },
+    {
+        "Item": "Sap",
+        "StackSize": 30
+    },
+    {
+        "Item": "Silica Pearls",
+        "StackSize": 100
+    },
+    {
+        "Item": "Silk",
+        "StackSize": 200
+    },
+    {
+        "Item": "Sparkpowder",
+        "StackSize": 100
+    },
+    {
+        "Item": "Stimulant",
+        "StackSize": 100
+    },
+    {
+        "Item": "Stone",
+        "StackSize": 100
+    },
+    {
+        "Item": "Sulfer",
+        "StackSize": 100
+    },
+    {
+        "Item": "Thatch",
+        "StackSize": 200
+    },
+    {
+        "Item": "Wood",
+        "StackSize": 100
+    },
+    {
+        "Item": "Wool",
+        "StackSize": 200
+    }
+]
