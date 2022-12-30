@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 import React, {useCallback, useEffect, useState} from 'react';
 import {Button} from "react-bootstrap";
-import {countBy} from "lodash";
+import {countBy, filter, first} from "lodash";
 import { v4 as uuidv4 } from "uuid";
 import { DateTime } from "luxon";
 
@@ -37,7 +37,7 @@ function App() {
 	const [allBlueprints, setAllBlueprints] = useState<Blueprint[]>([]);
 	const [blueprintsToDisplay, setBlueprintsToDisplay] = useState<Blueprint[]>([]);
 	const [showAddBlueprintModal, setShowAddBlueprintModal] = useState<boolean>(false);
-	const [, setUuidPendingEdit] = useState<string|undefined>(undefined);
+	const [uuidPendingEdit, setUuidPendingEdit] = useState<string|undefined>(undefined);
 	const [uuidPendingDeletion, setUuidPendingDeletion] = useState<string|undefined>(undefined);
 	const [blueprintPendingCalculator, setBlueprintPendingCalculator] = useState<Blueprint|undefined>(undefined);
 	const [searchText, setSearchText] = useState<string|undefined>(undefined);
@@ -50,6 +50,10 @@ function App() {
 		Mastercraft: 0,
 		Ascendant: 0
 	});
+
+	const _getBlueprintByUuid = function(blueprintUuid: string) {
+		return first(filter(allBlueprints, { uuid: blueprintUuid }));
+	};
 
 	const loadBlueprints = useCallback(function(searchText) {
 		blueprintProvider.getBlueprintsWithSearchQuery(searchText).then(function (blueprints) {
@@ -172,6 +176,17 @@ function App() {
 					}}
 				/> : <></>}
 
+				{uuidPendingEdit ? <AddBlueprintModal existingBlueprint={_getBlueprintByUuid(uuidPendingEdit)} onCallback={(blueprint: Blueprint) => {
+					if (blueprint) {
+						blueprintProvider.updateBlueprint(blueprint).then(function() {
+							loadBlueprints(searchText);
+							setSearchText(undefined);
+							setItemNameFilter(undefined);
+						});
+					}
+					setUuidPendingEdit(undefined);
+				}} /> : <></>}
+
 				{uuidPendingDeletion ?
 					<ConfirmActionModal title="Confirm Delete Blueprint" message="Are you sure you want to delete this blueprint?" onCallback={(confirm: boolean) => {
 						if (confirm) {
@@ -181,6 +196,8 @@ function App() {
 								setItemNameFilter(undefined);
 								setUuidPendingDeletion(undefined);
 							});
+						} else {
+							setUuidPendingDeletion(undefined);
 						}
 					}} />
 				: <></>}

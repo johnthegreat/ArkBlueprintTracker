@@ -34,6 +34,16 @@ export default class BlueprintProvider {
 		}));
 	}
 
+	updateBlueprint(blueprint: Blueprint): Promise<Blueprint> {
+		return apiHelper<Blueprint>(fetch(`${this.apiBaseUrl}/blueprint/${blueprint.uuid}`, {
+			method: 'PUT',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(blueprint)
+		}));
+	}
+
 	deleteBlueprint(blueprintUuid: string) {
 		return apiHelper<any>(fetch(`${this.apiBaseUrl}/blueprint/${blueprintUuid}`, {
 			method: 'DELETE'

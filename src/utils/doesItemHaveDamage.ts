@@ -24,6 +24,7 @@ export default function doesItemHaveDamage(itemName: string) {
 		"Stone Pick",
 		"Sword",
 		"Torch",
+		"Tropeognathus Saddle",
 		"Whip",
 		"Wooden Club"
 	].indexOf(itemName) >= 0;

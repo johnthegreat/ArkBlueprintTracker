@@ -5,6 +5,7 @@ import {Button, Modal} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import BlueprintMaterialCost from "../../models/BlueprintMaterialCost";
+import getStackSize from "../../utils/getStackSize";
 
 export default function BlueprintCraftingCalculatorModal(props: {
 	blueprint: Blueprint,
@@ -30,9 +31,10 @@ export default function BlueprintCraftingCalculatorModal(props: {
 				{props.blueprint.materialCosts && props.blueprint.materialCosts!.length > 0 ? <>
 					<div className="mb-3">
 						{props.blueprint.materialCosts.map((material: BlueprintMaterialCost) => {
+							const numMaterialStacks = Math.ceil(material.cost / getStackSize(material.name));
 							return (
 								<div key={material.name} className="mb-1">
-									{material.name} <span className="badge bg-primary">{material.cost}</span>
+									{material.name} <span className="badge bg-primary">{material.cost}</span> <span className="badge bg-secondary">{numMaterialStacks} Stack{numMaterialStacks>1?'s':''}</span>
 								</div>
 							);
 						})}

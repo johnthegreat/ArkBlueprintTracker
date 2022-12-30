@@ -16,6 +16,10 @@
         "StackSize": 200
     },
     {
+        "Item": "Blue Gem",
+        "StackSize": 100
+    },
+    {
         "Item": "Cementing Paste",
         "StackSize": 100
     },
@@ -109,6 +113,10 @@
     },
     {
         "Item": "Polymer",
+        "StackSize": 100
+    },
+    {
+        "Item": "Red Gem",
         "StackSize": 100
     },
     {

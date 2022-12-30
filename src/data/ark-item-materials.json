@@ -361,7 +361,7 @@
         "Metal Ingot"
     ]
 },{
-    "Item": "Wooly Rhino Saddle",
+    "Item": "Woolly Rhino Saddle",
     "Materials": [
         "Cementing Paste",
         "Fiber",
@@ -600,7 +600,7 @@
         "Silica Pearls"
     ]
 },{
-    "Item": "Magamasaur Saddle",
+    "Item": "Magmasaur Saddle",
     "Materials": [
         "Cementing Paste",
         "Fiber",
@@ -1300,8 +1300,16 @@
 },{
     "Item": "Hyaenodon Meatpack",
     "Materials": [
+        "Fiber",
+        "Hide",
+        "Metal Ingot"
+    ]
+},{
+    "Item": "Carcharo Saddle",
+    "Materials": [
         "Hide",
         "Fiber",
-        "Metal Ingot"
+        "Metal Ingot",
+        "Chitin/Keratin"
     ]
 }]
