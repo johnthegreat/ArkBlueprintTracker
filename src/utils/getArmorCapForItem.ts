@@ -19,7 +19,7 @@ export default function getArmorCapForItem(itemName: string) {
   } else if (itemName.startsWith("Fur ")) {
     return 188;
   } else if (itemName.startsWith("Chitin ")) {
-    return 235;
+    return 248;
   } else if (itemName.startsWith("Flak ")) {
     return 496;
   } else if (itemName.startsWith("Riot ")) {
