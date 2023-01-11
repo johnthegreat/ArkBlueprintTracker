@@ -45,6 +45,13 @@ export default function BlueprintsListCardSingle(props: {
           {blueprint.itemName} - {blueprint.quality}
         </div>
         <div className="card-body">
+          {blueprint.server ? (
+            <div>
+              Server: <span>{blueprint.server}</span>
+            </div>
+          ) : (
+            <></>
+          )}
           {(blueprint.armor || blueprint.damage || blueprint.durability) && (
             <div className="mb-3">
               {blueprint.armor && (

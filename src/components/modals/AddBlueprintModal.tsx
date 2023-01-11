@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 import { Button, Modal } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { map, sortBy, forEach, keys, cloneDeep } from "lodash";
+import { map, sortBy, forEach, keys, cloneDeep, isString } from "lodash";
 import { Typeahead } from "react-bootstrap-typeahead";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -49,12 +49,14 @@ export default function AddBlueprintModal(props: {
   confirmLabel?: string;
   onCallback: Function;
   existingBlueprint?: Blueprint;
+  serversList?: string[];
 }) {
   const [showModal, setShowModal] = useState<boolean>(true);
   const [errorAlertMessage, setErrorAlertMessage] = useState<
     string | undefined
   >(undefined);
   const [isEditMode, setEditMode] = useState<boolean>(false);
+  const [server, setServer] = useState<string>("");
   const [selectedItem, setSelectedItem] = useState<string>("");
   const [itemQuality, setItemQuality] = useState<string>("Primitive");
   const [materials, setMaterials] = useState<string[]>([]);
@@ -85,7 +87,7 @@ export default function AddBlueprintModal(props: {
 
       if (props.existingBlueprint) {
         setEditMode(true);
-        //console.log(keyBy(props.existingBlueprint.materialCosts, 'name'));
+        setServer(props.existingBlueprint.server ?? "");
         setSelectedItem(props.existingBlueprint.itemName);
         setItemQuality(props.existingBlueprint.quality);
         if (props.existingBlueprint.materialCosts) {
@@ -129,6 +131,7 @@ export default function AddBlueprintModal(props: {
       }
 
       let blueprint: Blueprint = {
+        server: server.length !== 0 ? server : undefined,
         itemName: selectedItem,
         quality: itemQuality,
         armor: undefinedIfNaN(parseFloat(formField_armorRating)),
@@ -172,6 +175,32 @@ export default function AddBlueprintModal(props: {
           <></>
         )}
         <form id="createClusterModalForm needs-validation">
+          <div className="mb-3">
+            <label htmlFor="blueprint-server" className="form-label">
+              <strong>Server</strong>
+            </label>
+
+            <Typeahead
+              id="blueprint-server"
+              onChange={(item) => {
+                console.log(item);
+                if (item.length === 0) {
+                  setServer("");
+                } else if (isString(item[0])) {
+                  setServer(item[0]);
+                } else if (item[0]["customOption"]) {
+                  setServer(item[0]["label"]);
+                }
+              }}
+              options={props.serversList ? props.serversList : []}
+              selected={server.length > 0 ? [server] : []}
+              placeholder="Add or select server..."
+              clearButton={true}
+              multiple={false}
+              allowNew={true}
+            />
+          </div>
+
           <div className="mb-3">
             <label htmlFor="blueprint-name" className="form-label">
               <strong>Name</strong>

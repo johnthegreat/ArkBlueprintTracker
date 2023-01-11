@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 import React, { useCallback, useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
-import { countBy, filter, first } from "lodash";
+import { countBy, filter, first, sortBy, uniq, each } from "lodash";
 import { v4 as uuidv4 } from "uuid";
 import { DateTime } from "luxon";
 
@@ -75,6 +75,16 @@ function App() {
         setBlueprintsToDisplay(blueprints);
       });
   }, []);
+
+  function getServersList() {
+    const servers: string[] = [];
+    each(allBlueprints, function (blueprint) {
+      if (blueprint.server) {
+        servers.push(blueprint.server);
+      }
+    });
+    return sortBy(uniq(servers));
+  }
 
   useEffect(function () {
     blueprintProvider.getBlueprints().then(function (blueprints) {
@@ -207,6 +217,7 @@ function App() {
 
         {showAddBlueprintModal ? (
           <AddBlueprintModal
+            serversList={getServersList()}
             onCallback={(blueprint: Blueprint) => {
               if (blueprint) {
                 blueprint.uuid = uuidv4();
@@ -226,6 +237,7 @@ function App() {
 
         {uuidPendingEdit ? (
           <AddBlueprintModal
+            serversList={getServersList()}
             existingBlueprint={_getBlueprintByUuid(uuidPendingEdit)}
             onCallback={(blueprint: Blueprint) => {
               if (blueprint) {

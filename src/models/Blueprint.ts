@@ -3,6 +3,7 @@ import BlueprintMaterialCost from "./BlueprintMaterialCost";
 
 export default interface Blueprint {
   uuid?: string;
+  server?: string;
   itemName: string;
   quality: string;
   armor?: number;
