@@ -273,7 +273,7 @@ export default function AddBlueprintModal(props: {
               <input
                 type="number"
                 step="0.1"
-                min={25}
+                min={1}
                 id="armor"
                 className="form-control"
                 value={formField_armorRating}
