@@ -26,6 +26,14 @@ export default function getArmorCapForItem(itemName: string) {
     return 570.4;
   }
 
+  /* Based on currently available information, armor cap is 74.5:
+   * https://ark.wiki.gg/wiki/Server_configuration#ItemStatClamps
+   * "This would clamp Saddles to 124.0 armor (74.5 for the 'tank' creatures such as Doedicurus, Rock Elemental, etc.)"
+   */
+  if (itemName === "Doedicurus Saddle" || itemName === "Rock Golem Saddle") {
+    return 74.5;
+  }
+
   // TODO This technically is not correct for some creatures, like a Magmasaur.
   if (itemName.indexOf(" Saddle") || itemName === "Hyaenodon Meatpack") {
     return 124;
