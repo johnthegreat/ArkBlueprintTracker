@@ -10,6 +10,7 @@ export default function doesItemHaveDamage(itemName: string) {
       "Electric Prod",
       "Fabricated Pistol",
       "Fabricated Sniper Rifle",
+      "Flamethrower",
       "Lance",
       "Longneck Rifle",
       "Metal Hatchet",

@@ -29,6 +29,7 @@ export default function doesItemHaveDurability(itemName: string) {
       "Flak Gauntlets",
       "Flak Helmet",
       "Flak Leggings",
+      "Flamethrower",
       "Fur Boots",
       "Fur Cap",
       "Fur Chestpiece",
