@@ -1,216 +1,27 @@
 [
   {
-    "Item": "Phiomia Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Parasaur Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Carbonemys Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Morellatops Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Ichthyosaurus Saddle",
-    "Materials": ["Fiber", "Flint", "Hide", "Metal", "Wood"]
-  },
-  {
-    "Item": "Pachy Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Trike Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Raptor Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Maewing Saddle",
+    "Item": "Allosaurus Saddle",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Equus Saddle",
-    "Materials": ["Fiber", "Hide", "Stone", "Wood"]
+    "Item": "Amargasaurus Saddle",
+    "Materials": ["Amargasaurus Spike", "Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Pulmonoscorpius Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Procoptodon Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Stego Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Pachyrhinosaurus Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Velonasaur Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Manta Saddle",
-    "Materials": ["Fiber", "Flint", "Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Gallimimus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Iguanodon Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Megaloceros Saddle",
+    "Item": "Andrewsarchus Saddle",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Mammoth Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Diplodocus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Deinonychus Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Terror Bird Saddle",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Doedicurus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Stone"]
-  },
-  {
-    "Item": "Sarco Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Lymantria Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
   },
   {
     "Item": "Ankylo Saddle",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Sabertooth Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Pteranodon Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Gacha Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Kaprosuchus Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Beelzebufo Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Thorny Dragon Saddle",
-    "Materials": ["Clay", "Fiber", "Hide", "Metal Ingot", "Wood"]
-  },
-  {
     "Item": "Araneo Saddle",
     "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
   },
   {
-    "Item": "Paracer Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Chalicotherium Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Pelagornis Saddle",
+    "Item": "Argentavis Saddle",
     "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Gasbags Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Dunkleosteus Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Dire Bear Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Mantis Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Megachelon Platform Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Shell Fragment",
-      "Silica Pearls"
-    ]
-  },
-  {
-    "Item": "Carno Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Megalodon Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Ravager Saddle",
-    "Materials": ["Fiber", "Fungal Wood", "Hide"]
-  },
-  {
-    "Item": "Baryonyx Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Paracer Platform Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Silica Pearls"
-    ]
-  },
-  {
-    "Item": "Thylacoleo Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Megatherium Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Woolly Rhino Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
   },
   {
     "Item": "Arthropluera Saddle",
@@ -225,128 +36,12 @@
     ]
   },
   {
-    "Item": "Tapejara Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+    "Item": "Assault Rifle",
+    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Amargasaurus Saddle",
-    "Materials": ["Amargasaurus Spike", "Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Megalosaurus Saddle",
+    "Item": "Baryonyx Saddle",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Roll Rat Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Green Gem",
-      "Hide",
-      "Metal Ingot"
-    ]
-  },
-  {
-    "Item": "Daeodon Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Basilosaurus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Castoroides Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot", "Thatch"]
-  },
-  {
-    "Item": "Snow Owl Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Argentavis Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Bronto Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Plesiosaur Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
-  },
-  {
-    "Item": "Karkinos Saddle",
-    "Materials": ["Blue Gem", "Fiber", "Fungal Wood", "Hide"]
-  },
-  {
-    "Item": "Managarmr Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Allosaurus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Therizinosaurus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Rock Golem Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Spino Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
-  },
-  {
-    "Item": "Megalania Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Rex Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Rock Drake Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Red Gem"]
-  },
-  {
-    "Item": "Quetz Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
-  },
-  {
-    "Item": "Mosasaur Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Silica Pearls"
-    ]
-  },
-  {
-    "Item": "Yutyrannus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Silica Pearls"]
-  },
-  {
-    "Item": "Bronto Platform Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Silica Pearls"
-    ]
-  },
-  {
-    "Item": "Plesiosaur Platform Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Silica Pearls"
-    ]
   },
   {
     "Item": "Basilisk Saddle",
@@ -359,29 +54,19 @@
     ]
   },
   {
-    "Item": "Tusoteuthis Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Mosasaur Platform Saddle",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Silica Pearls"
-    ]
-  },
-  {
-    "Item": "Magmasaur Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Gigantosaurus Saddle",
+    "Item": "Basilosaurus Saddle",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Quetz Platform Saddle",
+    "Item": "Beelzebufo Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Bow",
+    "Materials": ["Fiber", "Wood"]
+  },
+  {
+    "Item": "Bronto Platform Saddle",
     "Materials": [
       "Cementing Paste",
       "Fiber",
@@ -391,24 +76,79 @@
     ]
   },
   {
-    "Item": "Titanosaur Platform Saddle",
-    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
+    "Item": "Bronto Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Stone Pick",
-    "Materials": ["Stone", "Thatch", "Wood"]
+    "Item": "Carbonemys Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide"]
   },
   {
-    "Item": "Torch",
-    "Materials": ["Flint", "Stone", "Wood"]
+    "Item": "Carcharo Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Stone Hatchet",
-    "Materials": ["Flint", "Thatch", "Wood"]
+    "Item": "Carno Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Spear",
-    "Materials": ["Fiber", "Flint", "Wood"]
+    "Item": "Castoroides Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot", "Thatch"]
+  },
+  {
+    "Item": "Chainsaw",
+    "Materials": ["Cementing Paste", "Electronics", "Metal Ingot", "Polymer"]
+  },
+  {
+    "Item": "Chalicotherium Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Charge Lantern",
+    "Materials": [
+      "Charge Battery",
+      "Congealed Gas Ball",
+      "Electronics",
+      "Metal Ingot",
+      "Polymer",
+      "Red Gem"
+    ]
+  },
+  {
+    "Item": "Chitin Boots",
+    "Materials": ["Chitin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Chitin Chestpiece",
+    "Materials": ["Chitin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Chitin Gauntlets",
+    "Materials": ["Chitin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Chitin Helmet",
+    "Materials": ["Chitin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Chitin Leggings",
+    "Materials": ["Chitin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Climbing Pick",
+    "Materials": ["Fiber", "Fungal Wood", "Green Gem", "Metal Ingot"]
+  },
+  {
+    "Item": "Cloth Boots",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Cloth Gloves",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Cloth Hat",
+    "Materials": ["Fiber"]
   },
   {
     "Item": "Cloth Pants",
@@ -419,103 +159,27 @@
     "Materials": ["Fiber"]
   },
   {
-    "Item": "Cloth Gloves",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Cloth Boots",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Cloth Hat",
-    "Materials": ["Fiber"]
-  },
-  {
-    "Item": "Slingshot",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Fish Net",
-    "Materials": ["Fiber", "Hide", "Stone", "Thatch"]
-  },
-  {
-    "Item": "Wooden Club",
-    "Materials": ["Fiber", "Wood"]
-  },
-  {
-    "Item": "Bow",
-    "Materials": ["Fiber", "Wood"]
-  },
-  {
-    "Item": "Wooden Shield",
-    "Materials": ["Fiber", "Hide", "Wood"]
-  },
-  {
-    "Item": "Hide Gloves",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Hide Boots",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Hide Hat",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Hide Pants",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Hide Shirt",
-    "Materials": ["Fiber", "Hide"]
-  },
-  {
-    "Item": "Fishing Rod",
-    "Materials": ["Fiber", "Thatch", "Wood"]
-  },
-  {
-    "Item": "Whip",
-    "Materials": ["Fiber", "Hide", "Silk", "Wood"]
-  },
-  {
-    "Item": "Metal Pick",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Metal Hatchet",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Fur Boots",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Fur Gauntlets",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Fur Cap",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Fur Leggings",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Fur Chestpiece",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
-  },
-  {
-    "Item": "Pike",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
+    "Item": "Compound Bow",
+    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
   },
   {
     "Item": "Crossbow",
     "Materials": ["Fiber", "Metal Ingot", "Wood"]
   },
   {
-    "Item": "Desert Cloth Shirt",
+    "Item": "Daeodon Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Deinonychus Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Desert Cloth Boots",
+    "Materials": ["Fiber", "Hide", "Silk"]
+  },
+  {
+    "Item": "Desert Cloth Gloves",
     "Materials": ["Fiber", "Hide", "Silk"]
   },
   {
@@ -523,111 +187,70 @@
     "Materials": ["Fiber", "Hide", "Silk"]
   },
   {
+    "Item": "Desert Cloth Shirt",
+    "Materials": ["Fiber", "Hide", "Silk"]
+  },
+  {
     "Item": "Desert Goggles and Hat",
     "Materials": ["Crystal", "Fiber", "Hide", "Silica Pearls", "Silk"]
   },
   {
-    "Item": "Desert Cloth Gloves",
-    "Materials": ["Fiber", "Hide", "Silk"]
+    "Item": "Desmodus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
   },
   {
-    "Item": "Desert Cloth Boots",
-    "Materials": ["Fiber", "Hide", "Silk"]
+    "Item": "Diplodocus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
   },
   {
-    "Item": "Sword",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
+    "Item": "Dire Bear Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide"]
   },
   {
-    "Item": "Metal Sickle",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
+    "Item": "Doedicurus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Stone"]
   },
   {
-    "Item": "Lance",
-    "Materials": ["Fiber", "Flint", "Hide", "Metal Ingot", "Obsidian", "Pelt"]
+    "Item": "Dunkleosteus Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Ghillie Leggings",
-    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+    "Item": "Electric Prod",
+    "Materials": [
+      "AnglerGel",
+      "Cementing Paste",
+      "Crystal",
+      "Electronics",
+      "Metal Ingot",
+      "Polymer"
+    ]
   },
   {
-    "Item": "Ghillie Chestpiece",
-    "Materials": ["Fiber", "Hide", "Organic Polymer"]
-  },
-  {
-    "Item": "Ghillie Mask",
-    "Materials": ["Fiber", "Hide", "Organic Polymer"]
-  },
-  {
-    "Item": "Ghillie Gauntlets",
-    "Materials": ["Fiber", "Hide", "Organic Polymer"]
-  },
-  {
-    "Item": "Ghillie Boots",
-    "Materials": ["Fiber", "Hide", "Organic Polymer"]
-  },
-  {
-    "Item": "Simple Pistol",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Climbing Pick",
-    "Materials": ["Fiber", "Fungal Wood", "Green Gem", "Metal Ingot"]
-  },
-  {
-    "Item": "Longneck Rifle",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Chitin Leggings",
-    "Materials": ["Chitin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Chitin Chestpiece",
-    "Materials": ["Chitin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Chitin Helmet",
-    "Materials": ["Chitin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Chitin Gauntlets",
-    "Materials": ["Chitin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Chitin Boots",
-    "Materials": ["Chitin", "Fiber", "Hide"]
-  },
-  {
-    "Item": "Metal Shield",
-    "Materials": ["Cementing Paste", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Shotgun",
-    "Materials": ["Hide", "Metal Ingot", "Wood"]
-  },
-  {
-    "Item": "Chainsaw",
-    "Materials": ["Cementing Paste", "Electronics", "Metal Ingot", "Polymer"]
+    "Item": "Equus Saddle",
+    "Materials": ["Fiber", "Hide", "Stone", "Wood"]
   },
   {
     "Item": "Fabricated Pistol",
     "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Pump-Action Shotgun",
+    "Item": "Fabricated Sniper Rifle",
     "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Flak Leggings",
+    "Item": "Fish Net",
+    "Materials": ["Fiber", "Hide", "Stone", "Thatch"]
+  },
+  {
+    "Item": "Fishing Rod",
+    "Materials": ["Fiber", "Thatch", "Wood"]
+  },
+  {
+    "Item": "Flak Boots",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
     "Item": "Flak Chestpiece",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Flak Boots",
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
@@ -639,20 +262,8 @@
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Assault Rifle",
-    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
-  },
-  {
-    "Item": "Heavy Miner's Helmet",
-    "Materials": [
-      "AnglerGel",
-      "Crystal",
-      "Electronics",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Polymer"
-    ]
+    "Item": "Flak Leggings",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
     "Item": "Flamethrower",
@@ -662,6 +273,89 @@
       "Metal Ingot",
       "Polymer",
       "Sulfer"
+    ]
+  },
+  {
+    "Item": "Fur Boots",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Fur Cap",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Fur Chestpiece",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Fur Gauntlets",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Fur Leggings",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Gacha Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Gallimimus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Gas Mask",
+    "Materials": ["Absorbent Substrate", "Crystal", "Polymer"]
+  },
+  {
+    "Item": "Gasbags Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Ghillie Boots",
+    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+  },
+  {
+    "Item": "Ghillie Chestpiece",
+    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+  },
+  {
+    "Item": "Ghillie Gauntlets",
+    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+  },
+  {
+    "Item": "Ghillie Leggings",
+    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+  },
+  {
+    "Item": "Ghillie Mask",
+    "Materials": ["Fiber", "Hide", "Organic Polymer"]
+  },
+  {
+    "Item": "Gigantosaurus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Harpoon Launcher",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Obsidian",
+      "Polymer",
+      "Wood"
+    ]
+  },
+  {
+    "Item": "Hazard Suit Boots",
+    "Materials": [
+      "Blue Gem",
+      "Congealed Gas Ball",
+      "Crystal",
+      "Fiber",
+      "Hide",
+      "Polymer"
     ]
   },
   {
@@ -698,17 +392,6 @@
     ]
   },
   {
-    "Item": "Hazard Suit Boots",
-    "Materials": [
-      "Blue Gem",
-      "Congealed Gas Ball",
-      "Crystal",
-      "Fiber",
-      "Hide",
-      "Polymer"
-    ]
-  },
-  {
     "Item": "Hazard Suit Shirt",
     "Materials": [
       "Blue Gem",
@@ -720,16 +403,319 @@
     ]
   },
   {
-    "Item": "Compound Bow",
+    "Item": "Heavy Miner's Helmet",
+    "Materials": [
+      "AnglerGel",
+      "Crystal",
+      "Electronics",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Polymer"
+    ]
+  },
+  {
+    "Item": "Hide Boots",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Hide Gloves",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Hide Hat",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Hide Pants",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Hide Shirt",
+    "Materials": ["Fiber", "Hide"]
+  },
+  {
+    "Item": "Hyaenodon Meatpack",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Ichthyosaurus Saddle",
+    "Materials": ["Fiber", "Flint", "Hide", "Metal", "Wood"]
+  },
+  {
+    "Item": "Iguanodon Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Kaprosuchus Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Karkinos Saddle",
+    "Materials": ["Blue Gem", "Fiber", "Fungal Wood", "Hide"]
+  },
+  {
+    "Item": "Lance",
+    "Materials": ["Fiber", "Flint", "Hide", "Metal Ingot", "Obsidian", "Pelt"]
+  },
+  {
+    "Item": "Longneck Rifle",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Lymantria Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Maewing Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Magmasaur Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Mammoth Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Managarmr Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Manta Saddle",
+    "Materials": ["Fiber", "Flint", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Mantis Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Megachelon Platform Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Shell Fragment",
+      "Silica Pearls"
+    ]
+  },
+  {
+    "Item": "Megalania Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Megaloceros Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Megalodon Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Megalosaurus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Megatherium Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Metal Hatchet",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Metal Pick",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Metal Shield",
+    "Materials": ["Cementing Paste", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Metal Sickle",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Minigun",
+    "Materials": ["Cementing Paste", "Electronics", "Metal Ingot", "Polymer"]
+  },
+  {
+    "Item": "Morellatops Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Mosasaur Platform Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Silica Pearls"
+    ]
+  },
+  {
+    "Item": "Mosasaur Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Silica Pearls"
+    ]
+  },
+  {
+    "Item": "Night Vision Goggles",
+    "Materials": [
+      "Absorbent Substrate",
+      "AnglerGel",
+      "Cementing Paste",
+      "Crystal",
+      "Electronics",
+      "Metal Ingot",
+      "Polymer"
+    ]
+  },
+  {
+    "Item": "Pachy Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Pachyrhinosaurus Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Paracer Platform Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Silica Pearls"
+    ]
+  },
+  {
+    "Item": "Paracer Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Parasaur Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Pelagornis Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Phiomia Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Pike",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Plesiosaur Platform Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Silica Pearls"
+    ]
+  },
+  {
+    "Item": "Plesiosaur Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
+  },
+  {
+    "Item": "Procoptodon Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Pelt, Hair, or Wool"]
+  },
+  {
+    "Item": "Pteranodon Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Pulmonoscorpius Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Pump-Action Shotgun",
     "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "SCUBA Tank",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Polymer"]
+    "Item": "Quetz Platform Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Silica Pearls"
+    ]
   },
   {
-    "Item": "SCUBA Mask",
-    "Materials": ["Crystal", "Fiber", "Hide", "Silica Pearls"]
+    "Item": "Quetz Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
+  },
+  {
+    "Item": "Raptor Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Ravager Saddle",
+    "Materials": ["Fiber", "Fungal Wood", "Hide"]
+  },
+  {
+    "Item": "Rex Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Riot Boots",
+    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Riot Chestpiece",
+    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Riot Gauntlets",
+    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Riot Helmet",
+    "Materials": ["Crystal", "Fiber", "Hide", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Riot Leggings",
+    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Riot Shield",
+    "Materials": ["Crystal", "Metal Ingot", "Polymer", "Silica Pearls"]
+  },
+  {
+    "Item": "Rock Drake Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Red Gem"]
+  },
+  {
+    "Item": "Rock Golem Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Rocket Launcher",
+    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
+  },
+  {
+    "Item": "Roll Rat Saddle",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Green Gem",
+      "Hide",
+      "Metal Ingot"
+    ]
   },
   {
     "Item": "SCUBA Flippers",
@@ -746,67 +732,104 @@
     "Materials": ["Fiber", "Hide", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Fabricated Sniper Rifle",
-    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
+    "Item": "SCUBA Mask",
+    "Materials": ["Crystal", "Fiber", "Hide", "Silica Pearls"]
   },
   {
-    "Item": "Gas Mask",
-    "Materials": ["Absorbent Substrate", "Crystal", "Polymer"]
+    "Item": "SCUBA Tank",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Night Vision Goggles",
-    "Materials": [
-      "Absorbent Substrate",
-      "AnglerGel",
-      "Cementing Paste",
-      "Crystal",
-      "Electronics",
-      "Metal Ingot",
-      "Polymer"
-    ]
+    "Item": "Sabertooth Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Rocket Launcher",
-    "Materials": ["Cementing Paste", "Metal Ingot", "Polymer"]
-  },
-  {
-    "Item": "Riot Shield",
-    "Materials": ["Crystal", "Metal Ingot", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Riot Leggings",
-    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Riot Chestpiece",
-    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Riot Gauntlets",
-    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Riot Boots",
-    "Materials": ["Fiber", "Hide", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Riot Helmet",
-    "Materials": ["Crystal", "Fiber", "Hide", "Polymer", "Silica Pearls"]
-  },
-  {
-    "Item": "Electric Prod",
-    "Materials": [
-      "AnglerGel",
-      "Cementing Paste",
-      "Crystal",
-      "Electronics",
-      "Metal Ingot",
-      "Polymer"
-    ]
+    "Item": "Sarco Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide"]
   },
   {
     "Item": "Scout Remote",
     "Materials": []
+  },
+  {
+    "Item": "Shotgun",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Simple Pistol",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Slingshot",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Snow Owl Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
+  },
+  {
+    "Item": "Spear",
+    "Materials": ["Fiber", "Flint", "Wood"]
+  },
+  {
+    "Item": "Spino Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Silica Pearls"]
+  },
+  {
+    "Item": "Stego Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Stone Hatchet",
+    "Materials": ["Flint", "Thatch", "Wood"]
+  },
+  {
+    "Item": "Stone Pick",
+    "Materials": ["Stone", "Thatch", "Wood"]
+  },
+  {
+    "Item": "Sword",
+    "Materials": ["Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Tapejara Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Terror Bird Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Therizinosaurus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Thorny Dragon Saddle",
+    "Materials": ["Clay", "Fiber", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Thylacoleo Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Titanosaur Platform Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Torch",
+    "Materials": ["Flint", "Stone", "Wood"]
+  },
+  {
+    "Item": "Trike Saddle",
+    "Materials": ["Fiber", "Hide", "Wood"]
+  },
+  {
+    "Item": "Tropeognathus Saddle",
+    "Materials": ["Crystal", "Fiber", "Hide", "Metal Ingot", "Polymer"]
+  },
+  {
+    "Item": "Tusoteuthis Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
   },
   {
     "Item": "Unassembled Enforcer",
@@ -817,50 +840,27 @@
     "Materials": ["Black Pearl", "Crystal", "Element", "Metal Ingot", "Polymer"]
   },
   {
-    "Item": "Tropeognathus Saddle",
-    "Materials": ["Crystal", "Fiber", "Hide", "Metal Ingot", "Polymer"]
+    "Item": "Velonasaur Saddle",
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide"]
   },
   {
-    "Item": "Hyaenodon Meatpack",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+    "Item": "Whip",
+    "Materials": ["Fiber", "Hide", "Silk", "Wood"]
   },
   {
-    "Item": "Carcharo Saddle",
-    "Materials": ["Chitin/Keratin", "Fiber", "Hide", "Metal Ingot"]
+    "Item": "Wooden Club",
+    "Materials": ["Fiber", "Wood"]
   },
   {
-    "Item": "Minigun",
-    "Materials": ["Cementing Paste", "Electronics", "Metal Ingot", "Polymer"]
+    "Item": "Wooden Shield",
+    "Materials": ["Fiber", "Hide", "Wood"]
   },
   {
-    "Item": "Desmodus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+    "Item": "Woolly Rhino Saddle",
+    "Materials": ["Cementing Paste", "Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Andrewsarchus Saddle",
-    "Materials": ["Fiber", "Hide", "Metal Ingot"]
-  },
-  {
-    "Item": "Charge Lantern",
-    "Materials": [
-      "Charge Battery",
-      "Congealed Gas Ball",
-      "Electronics",
-      "Metal Ingot",
-      "Polymer",
-      "Red Gem"
-    ]
-  },
-  {
-    "Item": "Harpoon Launcher",
-    "Materials": [
-      "Cementing Paste",
-      "Fiber",
-      "Hide",
-      "Metal Ingot",
-      "Obsidian",
-      "Polymer",
-      "Wood"
-    ]
+    "Item": "Yutyrannus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Silica Pearls"]
   }
 ]
