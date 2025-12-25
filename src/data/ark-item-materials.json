@@ -164,7 +164,7 @@
     "Materials": ["Fiber", "Hide", "Metal Ingot"]
   },
   {
-    "Item": "Megachelon Saddle",
+    "Item": "Megachelon Platform Saddle",
     "Materials": [
       "Cementing Paste",
       "Fiber",
@@ -796,12 +796,12 @@
   {
     "Item": "Electric Prod",
     "Materials": [
-      "Polymer",
-      "Metal Ingot",
-      "Electronics",
+      "AnglerGel",
       "Cementing Paste",
       "Crystal",
-      "AnglerGel"
+      "Electronics",
+      "Metal Ingot",
+      "Polymer"
     ]
   },
   {
@@ -826,6 +826,41 @@
   },
   {
     "Item": "Carcharo Saddle",
-    "Materials": ["Hide", "Fiber", "Metal Ingot", "Chitin/Keratin"]
+    "Materials": ["Chitin/Keratin", "Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Minigun",
+    "Materials": ["Cementing Paste", "Electronics", "Metal Ingot", "Polymer"]
+  },
+  {
+    "Item": "Desmodus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot", "Wood"]
+  },
+  {
+    "Item": "Andrewsarchus Saddle",
+    "Materials": ["Fiber", "Hide", "Metal Ingot"]
+  },
+  {
+    "Item": "Charge Lantern",
+    "Materials": [
+      "Charge Battery",
+      "Congealed Gas Ball",
+      "Electronics",
+      "Metal Ingot",
+      "Polymer",
+      "Red Gem"
+    ]
+  },
+  {
+    "Item": "Harpoon Launcher",
+    "Materials": [
+      "Cementing Paste",
+      "Fiber",
+      "Hide",
+      "Metal Ingot",
+      "Obsidian",
+      "Polymer",
+      "Wood"
+    ]
   }
 ]

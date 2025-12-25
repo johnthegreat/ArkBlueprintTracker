@@ -24,7 +24,15 @@
     "StackSize": 100
   },
   {
+    "Item": "Charge Battery",
+    "StackSize": 1
+  },
+  {
     "Item": "Chitin",
+    "StackSize": 100
+  },
+  {
+    "Item": "Clay",
     "StackSize": 100
   },
   {
@@ -126,6 +134,10 @@
   {
     "Item": "Sap",
     "StackSize": 30
+  },
+  {
+    "Item": "Shell Fragment",
+    "StackSize": 100
   },
   {
     "Item": "Silica Pearls",

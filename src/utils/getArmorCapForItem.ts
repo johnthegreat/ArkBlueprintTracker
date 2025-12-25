@@ -4,7 +4,9 @@ import doesItemHaveArmor from "./doesItemHaveArmor";
  * @param {string} itemName
  * @return {number|undefined}
  */
-export default function getArmorCapForItem(itemName: string) {
+export default function getArmorCapForItem(
+  itemName: string
+): number | undefined {
   if (!doesItemHaveArmor(itemName)) {
     return undefined;
   }
@@ -26,6 +28,13 @@ export default function getArmorCapForItem(itemName: string) {
     return 570.4;
   }
 
+  // This is an educated guess, no documented proof anywhere
+  if (itemName === "Pachyrhinosaurus Saddle" || itemName === "Paracer Saddle") {
+    return 99.2;
+  } else if (itemName === "Megachelon Platform Saddle") {
+    return 115.0;
+  }
+
   /* Based on currently available information, armor cap is 74.5:
    * https://ark.wiki.gg/wiki/Server_configuration#ItemStatClamps
    * "This would clamp Saddles to 124.0 armor (74.5 for the 'tank' creatures such as Doedicurus, Rock Elemental, etc.)"
@@ -34,8 +43,9 @@ export default function getArmorCapForItem(itemName: string) {
     return 74.5;
   }
 
-  // TODO This technically is not correct for some creatures, like a Magmasaur.
-  if (itemName.indexOf(" Saddle") || itemName === "Hyaenodon Meatpack") {
+  if (itemName === "Magmasaur Saddle") {
+    return 143.8;
+  } else if (itemName.indexOf(" Saddle") || itemName === "Hyaenodon Meatpack") {
     return 124;
   }
 

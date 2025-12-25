@@ -8,7 +8,9 @@ export default function BlueprintLibraryPanelLeft(props: {
   activeItemName?: string;
 }) {
   const blueprintDataToShow = countBy(props.blueprints, "itemName");
-  const blueprintKeys = sortBy(keys(blueprintDataToShow));
+  const blueprintKeys = sortBy(keys(blueprintDataToShow), (value) =>
+    value.toLowerCase()
+  );
 
   return (
     <div className="mb-3">
