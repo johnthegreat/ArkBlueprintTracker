@@ -11,8 +11,9 @@ import {
 
 export default function DuplicateBlueprintsWidget(props: {
   blueprints: Blueprint[];
+  defaultOpen?: boolean;
 }) {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(props.defaultOpen ?? false);
 
   const counts = countBy(props.blueprints, "itemName");
   const allDuplicateItemNames = sortBy(

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
-import { countBy, filter, first, sortBy, uniq, each } from "lodash";
+import { countBy, filter, first, isUndefined } from "lodash";
 import { v4 as uuidv4 } from "uuid";
 import { DateTime } from "luxon";
 
@@ -15,12 +15,14 @@ import BlueprintCraftingCalculatorModal from "./components/modals/BlueprintCraft
 import Blueprint from "./models/Blueprint";
 import Search from "./components/Search";
 import BlueprintQualitySummaryBar from "./components/BlueprintQualitySummaryBar";
-import RecentlyAddedBlueprintsWidget from "./components/RecentlyAddedBlueprintsWidget";
-import DuplicateBlueprintsWidget from "./components/DuplicateBlueprintsWidget";
 
-import BlueprintProvider from "./apis/BlueprintProvider";
 import BlueprintLibraryPanelLeft from "./components/BlueprintLibraryPanelLeft";
 import BlueprintLibraryPanelRight from "./components/BlueprintLibraryPanelRight";
+import { BlueprintsContext } from "./contexts/BlueprintsContext";
+
+import BlueprintProvider from "./apis/BlueprintProvider";
+import { ServersContext } from "./contexts/ServersContext";
+import { BlueprintsDispatchContext } from "./contexts/BlueprintsDispatchContext";
 const blueprintProvider = new BlueprintProvider(
   // @ts-ignore
   process.env.REACT_APP_API_BASE_URL
@@ -36,7 +38,9 @@ interface CountsByType {
 }
 
 function App() {
-  const [allBlueprints, setAllBlueprints] = useState<Blueprint[]>([]);
+  const blueprintsDispatch = useContext(BlueprintsDispatchContext);
+  const blueprints = useContext(BlueprintsContext);
+  const servers = useContext(ServersContext);
   const [blueprintsToDisplay, setBlueprintsToDisplay] = useState<Blueprint[]>(
     []
   );
@@ -65,7 +69,7 @@ function App() {
   });
 
   const _getBlueprintByUuid = function (blueprintUuid: string) {
-    return first(filter(allBlueprints, { uuid: blueprintUuid }));
+    return first(filter(blueprints, { uuid: blueprintUuid }));
   };
 
   const loadBlueprints = useCallback(function (searchText) {
@@ -76,19 +80,8 @@ function App() {
       });
   }, []);
 
-  function getServersList() {
-    const servers: string[] = [];
-    each(allBlueprints, function (blueprint) {
-      if (blueprint.server) {
-        servers.push(blueprint.server);
-      }
-    });
-    return sortBy(uniq(servers));
-  }
-
-  useEffect(function () {
-    blueprintProvider.getBlueprints().then(function (blueprints) {
-      setAllBlueprints(blueprints);
+  useEffect(
+    function () {
       setBlueprintsToDisplay(blueprints);
 
       const countsByQuality = countBy(blueprints, "quality");
@@ -100,8 +93,9 @@ function App() {
         Mastercraft: countsByQuality["Mastercraft"] ?? 0,
         Ascendant: countsByQuality["Ascendant"] ?? 0,
       });
-    });
-  }, []);
+    },
+    [blueprints]
+  );
 
   useEffect(
     function () {
@@ -114,42 +108,37 @@ function App() {
     function () {
       if (itemNameFilter !== undefined) {
         setBlueprintsToDisplay(
-          allBlueprints.filter(function (blueprint) {
+          blueprints.filter(function (blueprint) {
             return blueprint.itemName === itemNameFilter;
           })
         );
       } else {
-        setBlueprintsToDisplay(allBlueprints);
+        setBlueprintsToDisplay(blueprints);
       }
     },
-    [itemNameFilter]
+    [itemNameFilter, blueprints]
   );
 
   return (
     <div className="App">
-      <header className="container-fluid px-5 mb-3">
-        <h1>Ark Blueprint Database</h1>
-      </header>
+      <BlueprintQualitySummaryBar
+        primitiveCount={countsByType.Primitive}
+        ramshackleCount={countsByType.Ramshackle}
+        apprenticeCount={countsByType.Apprentice}
+        journeymanCount={countsByType.Journeyman}
+        mastercraftCount={countsByType.Mastercraft}
+        ascendantCount={countsByType.Ascendant}
+      />
 
-      <main className="container-fluid px-5">
-        <BlueprintQualitySummaryBar
-          primitiveCount={countsByType.Primitive}
-          ramshackleCount={countsByType.Ramshackle}
-          apprenticeCount={countsByType.Apprentice}
-          journeymanCount={countsByType.Journeyman}
-          mastercraftCount={countsByType.Mastercraft}
-          ascendantCount={countsByType.Ascendant}
-        />
+      <Button
+        variant="primary"
+        onClick={() => setShowAddBlueprintModal(true)}
+        className="mb-3"
+      >
+        <FontAwesomeIcon icon={faPlus} /> Add Blueprint
+      </Button>
 
-        <Button
-          variant="primary"
-          onClick={() => setShowAddBlueprintModal(true)}
-          className="mb-3"
-        >
-          <FontAwesomeIcon icon={faPlus} /> Add Blueprint
-        </Button>
-
-        {/*<div className="row row-cols-2 mb-3">
+      {/*<div className="row row-cols-2 mb-3">
 					<div className="col-6">
 						<RecentlyAddedBlueprintsWidget blueprints={allBlueprints} quantityToShow={5} />
 					</div>
@@ -158,54 +147,54 @@ function App() {
 					</div>
 				</div>*/}
 
-        <Search
-          onSearch={function (searchText: string) {
-            setSearchText(searchText);
-            setItemNameFilter(undefined);
-          }}
-        />
+      <Search
+        onSearch={function (searchText: string) {
+          setSearchText(searchText);
+          setItemNameFilter(undefined);
+        }}
+      />
 
-        {allBlueprints.length > 0 ? (
-          <div className="row mb-3">
-            <div
-              className="d-none d-lg-block col-12 col-lg-4 col-xxl-3"
-              style={{ maxHeight: "calc(100vh - 17rem)", overflowY: "scroll" }}
-            >
-              <BlueprintLibraryPanelLeft
-                blueprints={allBlueprints}
-                onItemNameClicked={(itemName: string) => {
-                  setItemNameFilter(itemName);
-                }}
-                activeItemName={itemNameFilter}
-              />
-            </div>
-            <div
-              className="col-12 col-lg-8 col-xxl-9"
-              style={{ maxHeight: "calc(100vh - 17rem)", overflowY: "scroll" }}
-            >
-              <BlueprintLibraryPanelRight
-                blueprints={blueprintsToDisplay}
-                onCalculatorClicked={(blueprintUuid: string) => {
-                  blueprintProvider
-                    .getBlueprintByUuid(blueprintUuid)
-                    .then(function (blueprint) {
-                      setBlueprintPendingCalculator(blueprint);
-                    });
-                }}
-                onDeleteClicked={(blueprintUuid: string) =>
-                  setUuidPendingDeletion(blueprintUuid)
-                }
-                onEditClicked={(blueprintUuid: string) =>
-                  setUuidPendingEdit(blueprintUuid)
-                }
-              />
-            </div>
+      {blueprints.length > 0 ? (
+        <div className="row mb-3">
+          <div
+            className="d-none d-lg-block col-12 col-lg-4 col-xxl-3"
+            style={{ maxHeight: "calc(100vh - 17rem)", overflowY: "scroll" }}
+          >
+            <BlueprintLibraryPanelLeft
+              blueprints={blueprints}
+              onItemNameClicked={(itemName: string) => {
+                setItemNameFilter(itemName);
+              }}
+              activeItemName={itemNameFilter}
+            />
           </div>
-        ) : (
-          <></>
-        )}
+          <div
+            className="col-12 col-lg-8 col-xxl-9"
+            style={{ maxHeight: "calc(100vh - 17rem)", overflowY: "scroll" }}
+          >
+            <BlueprintLibraryPanelRight
+              blueprints={blueprintsToDisplay}
+              onCalculatorClicked={(blueprintUuid: string) => {
+                blueprintProvider
+                  .getBlueprintByUuid(blueprintUuid)
+                  .then(function (blueprint) {
+                    setBlueprintPendingCalculator(blueprint);
+                  });
+              }}
+              onDeleteClicked={(blueprintUuid: string) =>
+                setUuidPendingDeletion(blueprintUuid)
+              }
+              onEditClicked={(blueprintUuid: string) =>
+                setUuidPendingEdit(blueprintUuid)
+              }
+            />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
 
-        {/*<BlueprintsListCard blueprints={blueprints}
+      {/*<BlueprintsListCard blueprints={blueprints}
 									onEditClicked={(blueprintUuid: string) => setUuidPendingEdit(blueprintUuid)}
 									onDeleteClicked={(blueprintUuid: string) => setUuidPendingDeletion(blueprintUuid)}
 									onCalculatorClicked={(blueprintUuid: string) => {
@@ -215,79 +204,97 @@ function App() {
 									}}
 				/>*/}
 
-        {showAddBlueprintModal ? (
-          <AddBlueprintModal
-            serversList={getServersList()}
-            onCallback={(blueprint: Blueprint) => {
-              if (blueprint) {
-                blueprint.uuid = uuidv4();
-                blueprint.createdAt = DateTime.utc().toISO();
-                blueprintProvider.createBlueprint(blueprint).then(function () {
-                  loadBlueprints(searchText);
-                  setSearchText(undefined);
-                  setItemNameFilter(undefined);
-                });
-              }
-              setShowAddBlueprintModal(false);
-            }}
-          />
-        ) : (
-          <></>
-        )}
-
-        {uuidPendingEdit ? (
-          <AddBlueprintModal
-            serversList={getServersList()}
-            existingBlueprint={_getBlueprintByUuid(uuidPendingEdit)}
-            onCallback={(blueprint: Blueprint) => {
-              if (blueprint) {
-                blueprintProvider.updateBlueprint(blueprint).then(function () {
-                  loadBlueprints(searchText);
-                  setSearchText(undefined);
-                  setItemNameFilter(undefined);
-                });
-              }
-              setUuidPendingEdit(undefined);
-            }}
-          />
-        ) : (
-          <></>
-        )}
-
-        {uuidPendingDeletion ? (
-          <ConfirmActionModal
-            title="Confirm Delete Blueprint"
-            message="Are you sure you want to delete this blueprint?"
-            onCallback={(confirm: boolean) => {
-              if (confirm) {
-                blueprintProvider
-                  .deleteBlueprint(uuidPendingDeletion)
-                  .finally(function () {
-                    loadBlueprints(searchText);
-                    setSearchText(undefined);
-                    setItemNameFilter(undefined);
-                    setUuidPendingDeletion(undefined);
+      {showAddBlueprintModal ? (
+        <AddBlueprintModal
+          serversList={servers}
+          onCallback={(blueprint: Blueprint) => {
+            if (blueprint) {
+              blueprint.uuid = uuidv4();
+              blueprint.createdAt = DateTime.utc().toISO();
+              blueprintProvider
+                .createBlueprint(blueprint)
+                .then(function (blueprint) {
+                  blueprintsDispatch?.dispatch({
+                    type: "Add",
+                    payload: [blueprint],
                   });
-              } else {
-                setUuidPendingDeletion(undefined);
-              }
-            }}
-          />
-        ) : (
-          <></>
-        )}
+                  loadBlueprints(searchText);
+                  setSearchText(undefined);
+                  setItemNameFilter(undefined);
+                });
+            }
+            setShowAddBlueprintModal(false);
+          }}
+        />
+      ) : (
+        <></>
+      )}
 
-        {blueprintPendingCalculator ? (
-          <BlueprintCraftingCalculatorModal
-            blueprint={blueprintPendingCalculator}
-            onClose={() => {
-              setBlueprintPendingCalculator(undefined);
-            }}
-          />
-        ) : (
-          <></>
-        )}
-      </main>
+      {uuidPendingEdit ? (
+        <AddBlueprintModal
+          serversList={servers}
+          existingBlueprint={_getBlueprintByUuid(uuidPendingEdit)}
+          onCallback={(blueprint: Blueprint) => {
+            if (blueprint) {
+              blueprintProvider
+                .updateBlueprint(blueprint)
+                .then(function (blueprint) {
+                  blueprintsDispatch?.dispatch({
+                    type: "Update",
+                    payload: [blueprint],
+                  });
+                  loadBlueprints(searchText);
+                  setSearchText(undefined);
+                  setItemNameFilter(undefined);
+                });
+            }
+            setUuidPendingEdit(undefined);
+          }}
+        />
+      ) : (
+        <></>
+      )}
+
+      {uuidPendingDeletion ? (
+        <ConfirmActionModal
+          title="Confirm Delete Blueprint"
+          message="Are you sure you want to delete this blueprint?"
+          onCallback={(confirm: boolean) => {
+            const blueprint = _getBlueprintByUuid(uuidPendingDeletion);
+            if (confirm && !isUndefined(blueprint)) {
+              blueprintProvider
+                .deleteBlueprint(uuidPendingDeletion)
+                .then(function () {
+                  blueprintsDispatch?.dispatch({
+                    type: "Delete",
+                    payload: [blueprint],
+                  });
+                })
+                .finally(function () {
+                  loadBlueprints(searchText);
+                  setSearchText(undefined);
+                  setItemNameFilter(undefined);
+                  setUuidPendingDeletion(undefined);
+                });
+            } else {
+              setUuidPendingDeletion(undefined);
+            }
+          }}
+        />
+      ) : (
+        <></>
+      )}
+
+      {blueprintPendingCalculator ? (
+        <BlueprintCraftingCalculatorModal
+          blueprint={blueprintPendingCalculator}
+          onClose={() => {
+            setBlueprintPendingCalculator(undefined);
+          }}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

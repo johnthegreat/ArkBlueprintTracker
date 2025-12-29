@@ -8,12 +8,14 @@ import {
   faChevronRight,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { DateTime } from "luxon";
 
 export default function RecentlyAddedBlueprintsWidget(props: {
   blueprints: Blueprint[];
   quantityToShow: number;
+  defaultOpen?: boolean;
 }) {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(props.defaultOpen ?? false);
 
   const blueprintsToShow = slice(
     reverse(
@@ -40,17 +42,28 @@ export default function RecentlyAddedBlueprintsWidget(props: {
         Recently Added Blueprints
       </div>
       <Collapse in={isOpen}>
-        <div
-          className="card-body"
-          style={{ maxHeight: "10rem", overflowY: "scroll" }}
-        >
-          {blueprintsToShow.map(function (blueprint) {
-            return (
-              <p key={blueprint.uuid}>
-                {blueprint.itemName} - {blueprint.quality}
-              </p>
-            );
-          })}
+        <div className="card-body" style={{ overflowY: "scroll" }}>
+          <ul className={"list-group"}>
+            {blueprintsToShow.map(function (blueprint) {
+              return (
+                <li className={"list-group-item"} key={blueprint.uuid}>
+                  <div className={"mb-3"}>
+                    {blueprint.itemName} - {blueprint.quality}
+                  </div>
+                  <div className={"fw-light fst-italic fs-6 mb-3"}>
+                    {blueprint.server}
+                  </div>
+                  {blueprint.createdAt ? (
+                    <div className={"fw-light fs-6"}>
+                      {DateTime.fromISO(blueprint.createdAt).toLocaleString(
+                        DateTime.DATETIME_FULL_WITH_SECONDS
+                      )}
+                    </div>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </Collapse>
     </div>

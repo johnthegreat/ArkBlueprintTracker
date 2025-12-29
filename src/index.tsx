@@ -1,10 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./components/Root";
+import DuplicateBlueprintReportPage from "./components/pages/DuplicateBlueprintsReportPage";
+import RecentlyAddedBlueprintsReportPage from "./components/pages/RecentlyAddedBlueprintsReportPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        path: "/reports/duplicates",
+        element: <DuplicateBlueprintReportPage />,
+      },
+      {
+        path: "/reports/most-recent",
+        element: <RecentlyAddedBlueprintsReportPage />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById("root")
 );
